@@ -1,0 +1,6 @@
+[
+    {"id":1,"firstName":"Vishnu","lastName":"Ram","role":"Admin"},
+    {"id":2,"firstName":"Umesh","lastName":"Rajeev","role":"Admin"},
+    {"id":3,"firstName":"Jose","lastName":"George","role":"user"},
+    {"id":4,"firstName":"Sumod","lastName":"Menon","role":"user"}
+]

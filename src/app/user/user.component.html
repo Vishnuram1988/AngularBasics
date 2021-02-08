@@ -1,0 +1,26 @@
+<div class="w-100 pad-20">
+    <h2>Data and Event Binding</h2>
+    <h3>Welcome <span style="color:red">{{userName}}</span></h3>
+    <label class="mar-r-5"> Your Name</label>
+    <input #userNameField type="text" class="mar-r-5">
+    <button class="mar-l-5" (click)="setName(userNameField.value)">Set Name</button>
+</div>
+<h2 class="pad-l-20">Component Interaction and PIPE</h2>
+<div class="w-100 pad-l-20">
+    <label class="mar-r-5"> Message to the parent component</label>
+    <input #childMsg type="text" class="mar-r-5">
+    <button class="mar-l-5" (click)="emitMessage(childMsg.value)">Emit Data</button>
+</div>
+<div class="w-100 pad-l-20  pad-t-20">
+    <label class="mar-r-5">JSON PIPE {{user | json}}</label>
+</div>
+<h2 class="pad-l-20 pad-t-20">Services, Dependecy Injection, Http and Observable</h2>
+<div class="w-100 pad-l-20">
+    <h3 class="pad-l-20">User details from user service</h3>
+    <label class="pad-l-20" *ngIf="errorMessage" style="color:red">{{errorMessage}}</label>
+    <ul>
+        <li *ngFor="let user of userList">
+            <label>{{user.firstName}}</label>
+        </li>
+    </ul>
+</div>
